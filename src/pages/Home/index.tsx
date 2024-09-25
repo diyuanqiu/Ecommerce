@@ -267,7 +267,7 @@ function HomePage({navigation}: NaviProps) {
             <Pressable
               key={index}
               style={styles.offerContainer}
-              onPress={() => navigation.navigate('ProductInfo', item)}>
+              onPress={() => navigation.navigate('ProductInfo', {item: item})}>
               <Image source={{uri: item?.image}} style={styles.offerImage} />
               <View style={styles.offerTextContainer}>
                 <Text style={styles.offerText}>Upto {item?.offer}</Text>
