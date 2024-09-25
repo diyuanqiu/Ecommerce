@@ -214,6 +214,8 @@ function HomePage({navigation}: NaviProps) {
     fetchData();
   }, []);
 
+  console.log(JSON.stringify(products, null, 2));
+
   return (
     <View style={styles.mainContainer}>
       <ScrollView>
