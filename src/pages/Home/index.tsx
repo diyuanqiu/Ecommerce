@@ -214,7 +214,17 @@ function HomePage({navigation}: NaviProps) {
     fetchData();
   }, []);
 
-  console.log(JSON.stringify(products, null, 2));
+  // replacer用法
+  // const replacer = (key: string, value: any) => {
+  //   // 如果是 `age` 属性，将其过滤掉
+  //   if (key === 'title') {
+  //     return {test: 2};
+  //   }
+  //   // 将所有字符串值转换为大写
+  //   return typeof value === 'string' ? value.toUpperCase() : value;
+  // };
+
+  console.log(JSON.stringify(products[0], null, 2));
 
   return (
     <View style={styles.mainContainer}>
