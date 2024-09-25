@@ -1,3 +1,11 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs", // 或 "esnext" 根据需要选择
+    "target": "es6",      // 或更高的 ECMAScript 版本
+    "esModuleInterop": true, // 支持 CommonJS 和 ES 模块之间的兼容性
+    "moduleResolution": "node",
+    "outDir": "./dist",    // 编译后的输出目录
+  },
+  "include": ["src/**/*"] // 确保编译器包含你的源文件
 }
