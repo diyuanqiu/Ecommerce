@@ -52,6 +52,10 @@ function ProductInfo({route}: {route: any}) {
         <Text style={styles.price}>₹ {product?.price}</Text>
       </View>
       <Text style={styles.grayBorder} />
+      <View style={styles.categoryContainer}>
+        <Text>Color: </Text>
+        <Text>{product?.color}</Text>
+      </View>
     </ScrollView>
   );
 }
